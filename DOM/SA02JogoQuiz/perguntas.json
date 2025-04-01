@@ -10,13 +10,13 @@
         "resposta": "Júpiter"
     },
     {
-        "pergunta": "Quem pintou a Mona Lisa?",
-        "opcoes": ["Van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-        "resposta": "Leonardo da Vinci"
-    },
-    {
         "pergunta": "Qual o elemento químico essencial para a respiração celular?",
         "opcoes": ["Nitrogênio", "Oxigênio", "Carbono", "Hidrogênio"],
         "resposta": "Oxigênio"
+    },
+    {
+        "pergunta": "Quem pintou a Mona Lisa?",
+        "opcoes": ["Van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+        "resposta": "Leonardo da Vinci"
     }
 ]
