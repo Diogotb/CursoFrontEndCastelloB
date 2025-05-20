@@ -3,21 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './template/header/header.component';
-import { FooterComponent } from './template/footer/footer.component';
-import { InicioComponent } from './pages/inicio/inicio.component';
-import { ProdutosComponent } from './pages/produtos/produtos.component';
-import { ContatoComponent } from './pages/contato/contato.component';
+import { ClienteFormComponent } from './componentes/cliente-form/cliente-form.component';
+import { ProdutoFormComponent } from './componentes/produto-form/produto-form.component';
+import { PedidoFormComponent } from './componentes/pedido-form/pedido-form.component';
+import { PedidoListComponent } from './componentes/pedido-list/pedido-list.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    InicioComponent,
-    ProdutosComponent,
-    ContatoComponent
+    ClienteFormComponent,
+    ProdutoFormComponent,
+    PedidoFormComponent,
+    PedidoListComponent
   ],
   imports: [
     BrowserModule,
