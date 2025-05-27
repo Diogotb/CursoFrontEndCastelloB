@@ -13,7 +13,7 @@ export class DadosService {
 
   constructor() { }
 
-  //métodos
+  //métodos (crud)
   getClientes(): Cliente[]{ //método para listar todos os cliente do vetor
     return this.clientes;
   }
