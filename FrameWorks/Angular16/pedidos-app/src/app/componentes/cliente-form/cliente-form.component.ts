@@ -19,6 +19,7 @@ export class ClienteFormComponent {
     );
     this.dadosService.adicionarClientes(cliente);
     this.nome="";
+    alert("Cliente Adicionado com Sucesso!!!");
   }
 
 }
