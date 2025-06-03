@@ -16,6 +16,7 @@ export class PedidoFormComponent {
   produtosSelecionadosId: string[] = [];
   desconto = 0;
 
+
   constructor(private dadosService: DadosService){
     this.clientes = dadosService.getClientes();
     this.produtos = dadosService.getProdutos();
