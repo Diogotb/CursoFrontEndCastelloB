@@ -1,6 +1,6 @@
 # Criando Diagramas com Mermaid
 
-´´´mermaid
+```mermaid
 
 graph TD
     subgraph Interface["Navegador"]
@@ -27,5 +27,4 @@ graph TD
     BD-->BackEnd
     BackEnd-->FrontEnd
     FrontEnd-->UI
-
-´´´
+```
