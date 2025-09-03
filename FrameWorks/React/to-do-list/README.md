@@ -1,30 +1,18 @@
-# Criando Diagramas com Mermaid
+use minhaLojaCastelloB;
 
-```mermaid
+db.produtos.insertOne(
+    {nome: "NoteBook",
+    marca: "Positivo",
+    preco: 5000.00,
+    especificacoes:{
+        processador: "Intel i7 13º",
+        ram: "16GB",
+        armazenamento: "512GB"
+    }}
+);
 
-graph TD
-    subgraph Interface["Navegador"]
-        UI
-    end
+db.produtos.find();
 
-    subgraph Front["FrontEnd"]
-        FrontEnd
-    end
+db.produtos.find({preco:{$gt:5000}});
 
-    subgraph Back["BackEnd"]
-        BackEnd
-    end
-
-    subgraph Banco["Banco de Dados"]
-        BD
-    end
-
-    %% Fluxos
-
-    UI-->FrontEnd
-    FrontEnd-->BackEnd
-    BackEnd-->BD
-    BD-->BackEnd
-    BackEnd-->FrontEnd
-    FrontEnd-->UI
-```
+db.produtos.updateOne({nome:"NoteBook"},{$set:{preco:5500.00}})
