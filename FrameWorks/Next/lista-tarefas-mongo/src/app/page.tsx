@@ -70,7 +70,7 @@ export default function Home(){
       <ul>
         {tarefas.map((tarefa)=> (
           <li key={tarefa._id.toString()}>
-            
+            {tarefa.titulo}            
           </li>
         ))}
       </ul>
