@@ -7,7 +7,7 @@ interface Parametros{
     id: string
 }
 
-export async function PUT(req: NextRequest, {params}:{params:Parametros}){
+export async function PATCH(req: NextRequest, {params}:{params:Parametros}){
     try {
         const {id} = params;
         const data = await req.json();
@@ -15,10 +15,10 @@ export async function PUT(req: NextRequest, {params}:{params:Parametros}){
         if(!tarefaAtualizada) { //se não achou
             return NextResponse.json({success: false, error: "Not Found"}, {status:404});
         }
-        return NextResponse.json({success: true, data: tarefaAtualizada})
+        return NextResponse.json({success: true, data: tarefaAtualizada}, {status:200})
     } catch (error) {
         return NextResponse.json({
-            success:true, 
+            success:false, 
             error: `Erro ao Atualizar Tarefa: ${error}`
         }, {status: 400});
     }
@@ -35,7 +35,7 @@ export async function DELETE(req: NextRequest, {params}:{params:Parametros}){
         return NextResponse.json({succes: true, data:{}});
     } catch (error) {
         return NextResponse.json({
-            success:true, 
+            success:false, 
             error: `Erro ao Deletar Tarefa: ${error}`
         }, {status: 400});
     }
