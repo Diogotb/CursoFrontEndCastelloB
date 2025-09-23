@@ -93,34 +93,34 @@ classDiagram
 ```mermaid
 graph TD
     subgraph "SGM"
-        caso1 ([Fazer Login])
-        caso2 ([Gerenciar Ordens de Serviço - CRUD])
-        caso3 ([Gerenciar Equipamentos - CRUD])
-        caso4 ([Gerenciar Usuário])
-        caso5 ([Acessar o DashBoard])
+        uc1 ([Fazer Login])
+        uc2 ([Gerenciar Ordens de Serviço - CRUD])
+        uc3 ([Gerenciar Equipamentos - CRUD])
+        uc4 ([Gerenciar Usuário])
+        uc5 ([Acessar o DashBoard])
     end
 
     Tecnico([Técnico de Manutenção])
     Gestor([Gerente de Manutenção])
     Admin([Administrador do Sistema])
 
-    Tecnico --> caso1 
-    Tecnico --> caso3
-    Tecnico --> caso5
+    Tecnico --> uc1 
+    Tecnico --> uc3
+    Tecnico --> uc5
 
-    Gestor --> caso1
-    Gestor --> caso2
-    Gestor --> caso3
-    Gestor --> caso5
+    Gestor --> uc1
+    Gestor --> uc2
+    Gestor --> uc3
+    Gestor --> uc5
 
-    Admin --> caso1
-    Admin --> caso4
-    Admin --> caso5
+    Admin --> uc1
+    Admin --> uc4
+    Admin --> uc5
 
-    caso2 -.-> caso1
-    caso3 -.-> caso1
-    caso4 -.-> caso1
-    caso5 -.-> caso1
+    uc2 -.-> uc1
+    uc3 -.-> uc1
+    uc4 -.-> uc1
+    uc5 -.-> uc1
 
 ```
 
